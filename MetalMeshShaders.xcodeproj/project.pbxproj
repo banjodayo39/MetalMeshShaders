@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F490AD5B29C9E7220061F39C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490AD5A29C9E7220061F39C /* AppDelegate.swift */; };
+		F490AD5D29C9E7220061F39C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490AD5C29C9E7220061F39C /* SceneDelegate.swift */; };
+		F490AD5F29C9E7220061F39C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490AD5E29C9E7220061F39C /* ViewController.swift */; };
+		F490AD6429C9E7240061F39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F490AD6329C9E7240061F39C /* Assets.xcassets */; };
+		F490AD6729C9E7240061F39C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F490AD6529C9E7240061F39C /* LaunchScreen.storyboard */; };
+		F490AD6F29C9EB800061F39C /* MetalShaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490AD6E29C9EB800061F39C /* MetalShaderController.swift */; };
+		F490AD7229C9EBE40061F39C /* MeshShaderRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490AD7129C9EBE40061F39C /* MeshShaderRenderer.swift */; };
+		F490AD7429C9EFD90061F39C /* MSMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490AD7329C9EFD90061F39C /* MSMesh.swift */; };
+		F490AD7629C9F0CD0061F39C /* MeshUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490AD7529C9F0CD0061F39C /* MeshUtilities.swift */; };
+		F490AD7829C9F35C0061F39C /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = F490AD7729C9F35C0061F39C /* Shader.metal */; };
+		F490AD7C29CA00040061F39C /* MTLRenderPipelineStateProvider2.m in Sources */ = {isa = PBXBuildFile; fileRef = F490AD7B29CA00040061F39C /* MTLRenderPipelineStateProvider2.m */; };
+		F490AD8329CA13860061F39C /* Dragon.obj in Resources */ = {isa = PBXBuildFile; fileRef = F490AD8129CA13860061F39C /* Dragon.obj */; };
+		F490AD8429CA13860061F39C /* dragon.mbemesh in Resources */ = {isa = PBXBuildFile; fileRef = F490AD8229CA13860061F39C /* dragon.mbemesh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F490AD5729C9E7220061F39C /* MetalMeshShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalMeshShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F490AD5A29C9E7220061F39C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F490AD5C29C9E7220061F39C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F490AD5E29C9E7220061F39C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F490AD6329C9E7240061F39C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F490AD6629C9E7240061F39C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F490AD6829C9E7240061F39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F490AD6E29C9EB800061F39C /* MetalShaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalShaderController.swift; sourceTree = "<group>"; };
+		F490AD7129C9EBE40061F39C /* MeshShaderRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshShaderRenderer.swift; sourceTree = "<group>"; };
+		F490AD7329C9EFD90061F39C /* MSMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMesh.swift; sourceTree = "<group>"; };
+		F490AD7529C9F0CD0061F39C /* MeshUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshUtilities.swift; sourceTree = "<group>"; };
+		F490AD7729C9F35C0061F39C /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		F490AD7A29CA00040061F39C /* MetalMeshShaders-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MetalMeshShaders-Bridging-Header.h"; sourceTree = "<group>"; };
+		F490AD7B29CA00040061F39C /* MTLRenderPipelineStateProvider2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTLRenderPipelineStateProvider2.m; sourceTree = "<group>"; };
+		F490AD7D29CA06940061F39C /* MTLRenderPipelineStateProvider2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTLRenderPipelineStateProvider2.h; sourceTree = "<group>"; };
+		F490AD8129CA13860061F39C /* Dragon.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dragon.obj; sourceTree = "<group>"; };
+		F490AD8229CA13860061F39C /* dragon.mbemesh */ = {isa = PBXFileReference; lastKnownFileType = file; path = dragon.mbemesh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F490AD5429C9E7220061F39C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F490AD4E29C9E7220061F39C = {
+			isa = PBXGroup;
+			children = (
+				F490AD5929C9E7220061F39C /* MetalMeshShaders */,
+				F490AD5829C9E7220061F39C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F490AD5829C9E7220061F39C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F490AD5729C9E7220061F39C /* MetalMeshShaders.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F490AD5929C9E7220061F39C /* MetalMeshShaders */ = {
+			isa = PBXGroup;
+			children = (
+				F490AD7E29CA12F80061F39C /* Resources */,
+				F490AD7929C9F43C0061F39C /* Controllers */,
+				F490AD7029C9EBC70061F39C /* Renderer */,
+				F490AD5A29C9E7220061F39C /* AppDelegate.swift */,
+				F490AD5C29C9E7220061F39C /* SceneDelegate.swift */,
+				F490AD6329C9E7240061F39C /* Assets.xcassets */,
+				F490AD6529C9E7240061F39C /* LaunchScreen.storyboard */,
+				F490AD6829C9E7240061F39C /* Info.plist */,
+				F490AD7B29CA00040061F39C /* MTLRenderPipelineStateProvider2.m */,
+				F490AD7A29CA00040061F39C /* MetalMeshShaders-Bridging-Header.h */,
+				F490AD7D29CA06940061F39C /* MTLRenderPipelineStateProvider2.h */,
+			);
+			path = MetalMeshShaders;
+			sourceTree = "<group>";
+		};
+		F490AD7029C9EBC70061F39C /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				F490AD7129C9EBE40061F39C /* MeshShaderRenderer.swift */,
+				F490AD7329C9EFD90061F39C /* MSMesh.swift */,
+				F490AD7529C9F0CD0061F39C /* MeshUtilities.swift */,
+				F490AD7729C9F35C0061F39C /* Shader.metal */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		F490AD7929C9F43C0061F39C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F490AD5E29C9E7220061F39C /* ViewController.swift */,
+				F490AD6E29C9EB800061F39C /* MetalShaderController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F490AD7E29CA12F80061F39C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F490AD8229CA13860061F39C /* dragon.mbemesh */,
+				F490AD8129CA13860061F39C /* Dragon.obj */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F490AD5629C9E7220061F39C /* MetalMeshShaders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F490AD6B29C9E7240061F39C /* Build configuration list for PBXNativeTarget "MetalMeshShaders" */;
+			buildPhases = (
+				F490AD5329C9E7220061F39C /* Sources */,
+				F490AD5429C9E7220061F39C /* Frameworks */,
+				F490AD5529C9E7220061F39C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalMeshShaders;
+			productName = MetalMeshShaders;
+			productReference = F490AD5729C9E7220061F39C /* MetalMeshShaders.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F490AD4F29C9E7220061F39C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F490AD5629C9E7220061F39C = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = F490AD5229C9E7220061F39C /* Build configuration list for PBXProject "MetalMeshShaders" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F490AD4E29C9E7220061F39C;
+			productRefGroup = F490AD5829C9E7220061F39C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F490AD5629C9E7220061F39C /* MetalMeshShaders */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F490AD5529C9E7220061F39C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F490AD6729C9E7240061F39C /* LaunchScreen.storyboard in Resources */,
+				F490AD6429C9E7240061F39C /* Assets.xcassets in Resources */,
+				F490AD8329CA13860061F39C /* Dragon.obj in Resources */,
+				F490AD8429CA13860061F39C /* dragon.mbemesh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F490AD5329C9E7220061F39C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F490AD7C29CA00040061F39C /* MTLRenderPipelineStateProvider2.m in Sources */,
+				F490AD7629C9F0CD0061F39C /* MeshUtilities.swift in Sources */,
+				F490AD7229C9EBE40061F39C /* MeshShaderRenderer.swift in Sources */,
+				F490AD6F29C9EB800061F39C /* MetalShaderController.swift in Sources */,
+				F490AD5F29C9E7220061F39C /* ViewController.swift in Sources */,
+				F490AD7829C9F35C0061F39C /* Shader.metal in Sources */,
+				F490AD5B29C9E7220061F39C /* AppDelegate.swift in Sources */,
+				F490AD7429C9EFD90061F39C /* MSMesh.swift in Sources */,
+				F490AD5D29C9E7220061F39C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F490AD6529C9E7240061F39C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F490AD6629C9E7240061F39C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F490AD6929C9E7240061F39C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F490AD6A29C9E7240061F39C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F490AD6C29C9E7240061F39C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CNG79B32AZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetalMeshShaders/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.banjodayo.MetalMeshShaders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MetalMeshShaders/MetalMeshShaders-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F490AD6D29C9E7240061F39C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CNG79B32AZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetalMeshShaders/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.banjodayo.MetalMeshShaders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MetalMeshShaders/MetalMeshShaders-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F490AD5229C9E7220061F39C /* Build configuration list for PBXProject "MetalMeshShaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F490AD6929C9E7240061F39C /* Debug */,
+				F490AD6A29C9E7240061F39C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F490AD6B29C9E7240061F39C /* Build configuration list for PBXNativeTarget "MetalMeshShaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F490AD6C29C9E7240061F39C /* Debug */,
+				F490AD6D29C9E7240061F39C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F490AD4F29C9E7220061F39C /* Project object */;
+}
